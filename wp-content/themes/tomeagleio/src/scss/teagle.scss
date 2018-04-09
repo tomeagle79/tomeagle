@@ -9,7 +9,6 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: black, white, light, one-column, two-columns, left-sidebar, flexible-width, fluid-layout, responsive-layout, custom-menu, featured-images
 
 */
-
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #EDEFF0;
@@ -50,7 +49,7 @@ li {
     list-style-type: none;
 }
 
-@media screen and (max-width: 568px) {
+@media (max-width: 568px) {
     p {
         text-align: left;
     }
@@ -59,10 +58,9 @@ li {
 a {
     text-decoration: none;
     color: #000;
-}
-
-a:hover {
-    color: "";
+    // &:hover {
+    //
+    // }
 }
 
 header {
@@ -145,48 +143,24 @@ a#logo:visited {
     position: absolute;
     right: 20px;
     z-index: 10;
-}
+    &:hover {
+      cursor: pointer;
 
-#menu-icon:hover {
-    cursor: pointer;
+    }
 }
-
-/*
-ul#topnav {
-margin:0;
-padding:0;
-display: none;
-float: right;
-background-color: darkgray;
-z-index: 10000;
-}
-
-*/
 
 ul#topnav li {
     list-style-type: none;
-    padding: 0 10px 0px 10px;
+    padding: 0 10px;
     height: 75px;
     line-height: 75px;
     font-size: 25px;
-    margin: 0 10px 0 10px;
+    margin: 0 10px;
 }
 
 ul#topnav li a {
     color: #fff;
 }
-
-/*@media screen and (min-width: 760px) {
-#menu-icon {
-display: none;
-}
-ul#topnav {
-display: block;
-}
-ul#topnav li {
-display: inline;
-}
-}*/
 
 .container {
     box-sizing: border-box;
@@ -202,10 +176,9 @@ display: inline;
     background-color: #6A5C8D;
     background-image: none;
 }
-
 @media screen and (min-width: 568px) {
     #home {
-        background-image: url('http://tomeagle.io/wp-content/uploads/2017/04/webdev2.jpg');
+        background-image: url("/wp-content/uploads/2017/04/webdev2.jpg");
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -260,43 +233,45 @@ display: inline;
     -moz-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
 }
-
 @keyframes blink {
     0% {
         opacity: 1;
     }
+
     50% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
 }
-
 @-webkit-keyframes blink {
     0% {
         opacity: 1;
     }
+
     50% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
 }
-
 @-moz-keyframes blink {
     0% {
         opacity: 1;
     }
+
     50% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
 }
-
 @media screen and (min-width: 760px) {
     .element {
         font-size: 56px;
@@ -331,10 +306,9 @@ display: inline;
     height: auto;
     margin-top: 75px;
 }
-
 @media screen and (min-width: 568px) {
     #portfolio {
-        background-image: url(http://tomeagle.io/wp-content/uploads/2017/04/trail.jpg);
+        background-image: url("http://tomeagle.io/wp-content/uploads/2017/04/trail.jpg");
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -374,7 +348,7 @@ ul#skills li:hover {
     height: 100%;
     width: 100%;
     opacity: 0;
-    transition: .5s ease;
+    transition: 0.5s ease;
     z-index: 10;
     background: #AE4CC9;
     /* For browsers that do not support gradients */
@@ -405,9 +379,7 @@ ul#skills li:hover {
 .text a {
     color: #fff;
 }
-
 /* Portfolio section -------------------------------------*/
-
 div#portfolio h1 {
     color: #fff !important;
 }
@@ -439,14 +411,12 @@ align-items: center;
     width: 15vw;
     background-color: #fff;
 }
-
 @media screen and (max-width: 1024px) {
     ul#projects li {
         height: 40vw;
         width: 40vw;
     }
 }
-
 @media screen and (max-width: 768px) {
     ul#projects li {
         height: 80vw;
@@ -472,15 +442,12 @@ align-items: center;
     font-family: 'Pacifico', cursive;
     font-size: 2em;
 }
-
 @media screen and (max-width: 1024px) {
     div.overlay {
         display: none;
     }
 }
-
 /* Contact section -----------------------------------------------------------*/
-
 #contact {
     margin-top: 75px;
 }
@@ -500,7 +467,9 @@ form {
     margin: auto;
 }
 
-.form-element, .wpcf7 input, .wpcf7 textarea {
+.form-element,
+.wpcf7 input,
+.wpcf7 textarea {
     display: block;
     width: 70%;
     min-width: 200px;
@@ -516,7 +485,6 @@ form {
 .wpcf7 textarea {
     height: 150px;
 }
-
 /*
 label {
 width: 70%;
@@ -526,7 +494,6 @@ float:left;
 display: block;
 margin:auto;
 }*/
-
 .wpcf7 input[type="submit"],
 .wpcf7 input[type="button"] {
     margin-top: 20px !important;
@@ -578,18 +545,17 @@ footer {
 
 footer i {
     transition: 0.3s;
+
     &:hover {
-      transform: translateY(2px);
+        transform: translateY(2px);
     }
 }
-
 /*
  @media screen and (min-width: 760px) {
 
 }
 */
 /* Hide template debug info */
-
 .debug {
-  display: none;
+    display: none;
 }

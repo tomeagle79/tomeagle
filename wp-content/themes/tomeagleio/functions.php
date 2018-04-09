@@ -6,7 +6,7 @@ function wpt_theme_styles() {
 	wp_enqueue_style( 'normalize_css', get_template_directory_uri() . '/css/normalize.css' );
 	wp_enqueue_style( 'font_awesome_css', get_template_directory_uri() . '/css/font-awesome.css' );
 	wp_enqueue_style( 'style_css', get_template_directory_uri() . '/style.css' );
-	wp_enqueue_style( 'tomeagle_css', get_template_directory_uri() . '/tomeagle.css' );
+	wp_enqueue_style( 'tomeagle_css', get_template_directory_uri() . '/teagle.css' );
 
 	wp_enqueue_style( 'Roboto', "https://fonts.googleapis.com/css?family=Roboto" );
 	wp_enqueue_style( 'Montserrat', "https://fonts.googleapis.com/css?family=Montserrat" );

@@ -48,7 +48,6 @@ ul {
 li {
     list-style-type: none;
 }
-
 @media (max-width: 568px) {
     p {
         text-align: left;
@@ -143,9 +142,9 @@ a#logo:visited {
     position: absolute;
     right: 20px;
     z-index: 10;
-    &:hover {
-      cursor: pointer;
 
+    &:hover {
+        cursor: pointer;
     }
 }
 
@@ -320,23 +319,23 @@ ul#skills {
     width: 50%;
     margin: 0 auto;
     text-align: center;
-}
 
-ul#skills li {
-    margin: 10px;
-    color: darkgray;
-    list-style-type: none;
-    display: inline-block;
-    height: 100px;
-    width: 100px;
-    line-height: 50px;
-    background-color: #ECECEC;
-    text-align: center;
-}
+    li {
+        margin: 10px;
+        color: darkgray;
+        list-style-type: none;
+        display: inline-block;
+        height: 100px;
+        width: 100px;
+        line-height: 50px;
+        background-color: #ECECEC;
+        text-align: center;
 
-ul#skills li:hover {
-    background-color: #28B69E;
-    color: #fff;
+        &:hover {
+            background-color: #28B69E;
+            color: #fff;
+        }
+    }
 }
 
 .overlay {
@@ -351,13 +350,6 @@ ul#skills li:hover {
     transition: 0.5s ease;
     z-index: 10;
     background: #AE4CC9;
-    /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(right, #AE4CC9, #3CA4D8);
-    /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(left, #AE4CC9, #3CA4D8);
-    /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(left, #AE4CC9, #3CA4D8);
-    /* For Firefox 3.6 to 15 */
     background: linear-gradient(to left, #AE4CC9, #3CA4D8);
     /* Standard syntax */
 }
@@ -373,12 +365,13 @@ ul#skills li:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+
+    a {
+        color: #fff;
+    }
 }
 
-.text a {
-    color: #fff;
-}
+.text a {}
 /* Portfolio section -------------------------------------*/
 div#portfolio h1 {
     color: #fff !important;
@@ -387,34 +380,21 @@ div#portfolio h1 {
 ul#projects {
     width: 100%;
     display: block;
-    /*
-flex-wrap: wrap;
-justify-content: center;
-align-items: center;*/
     padding: 0 !important;
     text-align: center;
-}
 
-ul#projects li {
-    /*display: flex !important;
-flex-direction: column;
-
-justify-content: center;
-align-items: center;
-*/
-    position: relative;
-    margin: 10px;
-    color: darkgray;
-    list-style-type: "";
-    display: inline-block;
-    height: 15vw;
-    width: 15vw;
-    background-color: #fff;
-}
-@media screen and (max-width: 1024px) {
-    ul#projects li {
-        height: 40vw;
-        width: 40vw;
+    li {
+        position: relative;
+        margin: 10px;
+        color: darkgray;
+        display: inline-block;
+        height: 15vw;
+        width: 15vw;
+        background-color: #fff;
+        @media screen and (max-width: 1024px) {
+            height: 40vw;
+            width: 40vw;
+        }
     }
 }
 @media screen and (max-width: 768px) {
@@ -429,12 +409,10 @@ align-items: center;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-}
-
-.project-img img {
-    width: 100%;
-    height: auto;
+    img {
+      width: 100%;
+      height: auto;
+    }
 }
 
 #codePlayer {
@@ -525,12 +503,6 @@ div#empty {
 footer {
     background: #AE4CC9;
     /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(left, #AE4CC9, #3CA4D8);
-    /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(right, #AE4CC9, #3CA4D8);
-    /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(right, #AE4CC9, #3CA4D8);
-    /* For Firefox 3.6 to 15 */
     background: linear-gradient(to right, #AE4CC9, #3CA4D8);
     /* Standard syntax */
     color: #fff;
@@ -545,16 +517,11 @@ footer {
 
 footer i {
     transition: 0.3s;
-
     &:hover {
         transform: translateY(2px);
     }
 }
-/*
- @media screen and (min-width: 760px) {
 
-}
-*/
 /* Hide template debug info */
 .debug {
     display: none;
